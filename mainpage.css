@@ -1,0 +1,140 @@
+@import url('https://cdn.jsdelivr.net/npm/@expo-google-fonts/gfs-didot@0.2.3/index.min.js');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Helvetica Neue Light", Arial, sans-serif;
+    font-weight: 1;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: white;
+}
+
+.logo{
+    cursor: pointer;
+    max-width: 100px;
+}
+
+.nav-index{
+    list-style: none;
+}
+
+.nav-index li{
+    display: inline-block;
+    padding: 0px 20px;
+    cursor: pointer;
+}
+
+.nav-index li a{
+    font-size: small;
+    color: rgba(81, 79, 79, 0.858);
+    transition: all 0.3s ease 0s;
+}
+
+.nav-index li a:hover{
+    color: rgb(158, 156, 156);
+}
+
+.selections{
+    text-align: center;
+}
+.select-h{
+    color:rgba(43, 41, 41, 0.858);
+    list-style: none;
+    margin-top: 152px;
+    margin-bottom: 60px;
+}
+.select-h li {
+    display: inline-block;
+    padding: 0px 20px;
+    cursor: pointer;
+    margin: 10px 0; 
+    font-weight: bold;
+}
+.select-h li a{
+    transition: all 0.3s ease 0s;
+}
+.select-h li a:hover{
+    color: rgb(158, 156, 156);
+}
+/*imagenes con boton*/
+.im-con {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+}
+
+.image-container {
+    max-width: 90%;
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: 70px;
+}
+
+.mujeres-img,
+.hombres-img {
+    width: 100%;
+    height: auto;
+}
+
+.comprar-button-m,
+.comprar-button-h {
+    position: absolute;
+    bottom: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    color: rgba(43, 41, 41, 0.858);
+    border: none;
+    padding: 7px 10px;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+@media (max-width: 768px) {
+    .comprar-button-m,
+    .comprar-button-h {
+        font-size: 10px; /* Cambia el tamaño del botón en pantallas más pequeñas si es necesario */
+    }
+}
+
+/*nav abajo*/
+.b-info-display{
+    margin-top: 6%;
+    display: flex;
+    justify-content: center;
+}
+.colecciones{
+    color:rgba(43, 41, 41, 0.858);
+    margin-right: 200px;
+    margin-bottom: 30px;
+}
+.co-m, .co-h, .a-cuenta, .a-contacto{
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+.ayuda{
+    color:rgba(43, 41, 41, 0.858);
+}
+.info-title{
+    color:black;
+    margin-bottom: 25px;
+}
+.t-copyr{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.colecciones ul:hover, .ayuda ul:hover{
+    color: rgb(158, 156, 156);
+}
