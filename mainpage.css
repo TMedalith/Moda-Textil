@@ -138,3 +138,56 @@
 .colecciones ul:hover, .ayuda ul:hover{
     color: rgb(158, 156, 156);
 }
+
+/*------mujeres html-------*/
+.bot-titu{
+    margin-top: -30px;
+    display: flex;
+    justify-content: center;
+}
+.bot-titu button{
+    margin-right: 20px;
+    border-radius: 10px;
+    border: none;
+    padding: 6px 10px;
+    cursor: pointer;
+    background-color: pink;
+    color: white;
+}
+.bot-titu button:hover{
+    background-color: #e47676;
+}
+.vestidos , .polos, .bottoms, .abrigos,.accesorios{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-left: 8%;
+    flex-wrap: wrap;
+}
+.polos, .bottoms,.abrigos, .accesorios{
+    display: none;
+}
+.vestidos > div , .polos>div , .bottoms>div, .abrigos>div,.accesorios>div{
+    width: calc(33.33% - 10px); /* El 10px es para dar espacio entre los elementos */
+    margin-bottom: 20px; /* Espacio entre filas */
+    text-align: center;
+}
+
+.vestido, .polo, .bottom, .abrigo,.accesorio{
+    margin-right: 20px;
+    width: 245px;
+    height: 340px;
+} 
+
+/*pantalla pequeña*/
+@media (max-width: 900px) {
+    .vestidos, .polos, .bottoms, .abrigos,.accesorios{
+        justify-content: center;
+        margin-left: 0;
+    }
+
+    .vestidos > div, .polos>div, .bottoms>div, .abrigos>div,.accesorios>div{
+        width: 100%; /* Mostrar solo 1 producto por fila en pantallas más pequeñas */
+        margin-bottom: 20px; /* Espacio entre filas */
+    }
+}
