@@ -157,23 +157,24 @@
 .bot-titu button:hover{
     background-color: #e47676;
 }
-.vestidos , .polos, .bottoms, .abrigos,.accesorios{
+.vestidos , .polos, .bottoms, .abrigos,.accesorios, .h-polos, .h-bottoms, .h-abrigos, .h-accesorios{
     display: flex;
     justify-content: center;
     margin-top: 20px;
     margin-left: 8%;
     flex-wrap: wrap;
 }
-.polos, .bottoms,.abrigos, .accesorios{
+.polos, .bottoms,.abrigos, .accesorios, .h-bottoms, .h-abrigos, .h-accesorios{
     display: none;
 }
-.vestidos > div , .polos>div , .bottoms>div, .abrigos>div,.accesorios>div{
+.vestidos > div , .polos>div , .bottoms>div, .abrigos>div,.accesorios>div, .h-polos>div, .h-bottoms>div, .h-abrigos>div, .h-accesorios>div{
     width: calc(33.33% - 10px); /* El 10px es para dar espacio entre los elementos */
     margin-bottom: 20px; /* Espacio entre filas */
     text-align: center;
 }
 
-.vestido, .polo, .bottom, .abrigo,.accesorio{
+.vestido, .polo, .bottom, .abrigo,.accesorio,.poloh,.bottomh,.abrigoh,.accesorioh{
+    cursor: pointer;
     margin-right: 20px;
     width: 245px;
     height: 340px;
@@ -181,12 +182,12 @@
 
 /*pantalla pequeña*/
 @media (max-width: 900px) {
-    .vestidos, .polos, .bottoms, .abrigos,.accesorios{
+    .vestidos, .polos, .bottoms, .abrigos,.accesorios, .h-polos, .h-bottoms, .h-abrigos, .h-accesorios{
         justify-content: center;
         margin-left: 0;
     }
 
-    .vestidos > div, .polos>div, .bottoms>div, .abrigos>div,.accesorios>div{
+    .vestidos > div, .polos>div, .bottoms>div, .abrigos>div,.accesorios>div, .h-polos>div, .h-bottoms>div, .h-abrigos>div, .h-accesorios>div{
         width: 100%; /* Mostrar solo 1 producto por fila en pantallas más pequeñas */
         margin-bottom: 20px; /* Espacio entre filas */
     }
