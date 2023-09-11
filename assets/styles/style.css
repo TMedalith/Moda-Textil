@@ -1,17 +1,18 @@
 @import url('https://cdn.jsdelivr.net/npm/@expo-google-fonts/gfs-didot@0.2.3/index.min.js');
-*{
+ *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: "Helvetica Neue Light", Arial, sans-serif;
     font-weight: 1;
+    letter-spacing: 0.5px;
 }
 
-.header{
+header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 10%; 
+    padding: 18px 10%; 
     position: fixed;
     top: 0;
     left: 0;
@@ -25,35 +26,42 @@
     max-width: 100px;
 }
 
-.nav-index{
+.user-links{
     list-style: none;
 }
 
-.nav-index li{
+.user-links li{
     display: inline-block;
     padding: 0px 20px;
     cursor: pointer;
 }
 
-.nav-index li a{
+.user-links li a{
     font-size: small;
     color: rgba(81, 79, 79, 0.858);
     transition: all 0.3s ease 0s;
+    text-decoration: none;
 }
 
-.nav-index li a:hover{
+.user-links li a:hover{
     color: rgb(158, 156, 156);
 }
 
 .selections{
     text-align: center;
 }
+
+.selections a{
+    text-decoration: none;
+    color: rgba(43, 41, 41, 0.858);
+}
+
 .select-h{
-    color:rgba(43, 41, 41, 0.858);
     list-style: none;
     margin-top: 152px;
     margin-bottom: 60px;
 }
+
 .select-h li {
     display: inline-block;
     padding: 0px 20px;
@@ -178,7 +186,85 @@
     margin-right: 20px;
     width: 245px;
     height: 340px;
-} 
+}  */
+
+ .container {
+     max-width: 1200px;
+     margin: 0 auto;
+     padding: 20px;
+ }
+
+
+
+/* Estilos del formulario emergente */
+
+.form-popup#login-popup {
+    display: none;
+}
+
+.form-popup {
+    border: 2px solid red;
+    display: none ;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-content {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    text-align: center;
+}
+
+.form-content form{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.form-content a, input, button, h3 {
+    font-size: 13px;
+     cursor: pointer;   
+}
+
+input[type="text"],
+input[type="password"], input[type="email"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 2px solid rgb(182, 177, 177);
+    border-radius: 4px;
+    outline: none;
+    
+}
+
+input::placeholder {
+    color: gray;
+}
+
+button {
+    background-color: #2c2b2b;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover{
+    background:black ;
+}
 
 /*pantalla pequeña*/
 @media (max-width: 900px) {
