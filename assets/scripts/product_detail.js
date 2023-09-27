@@ -22,6 +22,27 @@ registerLink.addEventListener('click', () => {
     registerPopup.style.display = 'flex';
 });
 
+$(document).ready(function() {
+    // Agregar evento de clic al botón "Agregar al carrito"
+    $('.add-to-cart').on('click', function() {
+        // Obtener el ID del producto desde el atributo data-product-id
+        var productId = $(this).data('product-id');
+        console.log('ID del producto:', productId);
+        
+        $.ajax({
+            url: '../pages/cart.php', // URL de tu script de agregar al carrito
+            type: 'POST',
+            data: { product_id: productId }, // Datos que deseas enviar al servidor
+            success: function(response) {
+                window.location.href = '../pages/cart.php';
+            },
+            error: function() { 
+                alert('Error al agregar el producto al carrito.');
+            }
+        });
+    });
+});
+
 // Function to close the popups when clicking outside
 document.addEventListener('click', (event) => {
     if (event.target === loginPopup || event.target === registerPopup) {
@@ -29,4 +50,3 @@ document.addEventListener('click', (event) => {
         registerPopup.style.display = 'none';
     }
 });
-

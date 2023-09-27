@@ -1,3 +1,5 @@
+<?php include '../includes/header.php'; ?>
+<?php include '../pages/auten.php'; ?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -5,25 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Moda Textil</title>
     <link rel="stylesheet" href="/assets/styles/style.css">
-    <link rel="icon" href="assets/images/logo.png">
+    <link rel="icon" href="/assets/images/logo.png">
+    <script src="../assets/scripts/hombres.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
-    <header>
-        <a href="/index.html"><img class="logo" src="/assets/images/logo.png" alt="Moda Textil Logo"></a>
-        <nav>
-            <ul class="user-links">
-                <li><a href="#" id="login-link" class="auth-link">Iniciar Sesión</a></li>
-                <li><a href="#" id="cart-link" class="">Carrito</a></li>
-            </ul>
-        </nav>
-    </header>
-
     <section class="selections">
         <ul class="select-h">
-            <li><a href="/pages/mujeres.html">
+            <li><a href="mujeres.php">
                     <h5 class="c-mujeres">MUJERES</h5>
                 </a></li>
-            <li><a href="/pages/hombres.html">
+            <li><a href="hombres.php">
                     <h5 class="c-hombres">HOMBRES</h5>
                 </a></li>
         </ul>
@@ -32,7 +26,7 @@
     <section class="prod-hombres">
         <div class="bot-titu">
             <button class="h-polotops">Polos</button>
-            <button class="hbottoms">Bottoms</button>
+            <button class="hbottoms">Jeans</button>
             <button class="h-abrigosca">Abrigos y Casacas</button>
             <button class="haccesorios">Accesorios</button>
         </div>
@@ -108,34 +102,7 @@
         
 
     </section>
-    
-    <footer class="nav-bottom">
-        <div class="b-info-display">
-            <div class="colecciones">
-                <h5 class="info-title">COLECCIONES</h5>
-                <ul>
-                    <h5 class="co-m">Mujer</h5>
-                </ul>
-                <ul>
-                    <h5 class="co-h">Hombre</h5>
-                </ul>
-            </div>
-            <div class="ayuda">
-                <h5 class="info-title">AYUDA</h5>
-                <ul>
-                    <h5 class="a-cuenta">Mi cuenta</h5>
-                </ul>
-                <ul>
-                    <h5 class="a-contacto">Contacto</h5>
-                </ul>
-            </div>
-        </div>
-        <div class="copyr">
-            <br>
-            <h5 class="t-copyr">El contenido de esta página web está protegido por copyright y es propiedad de Moda
-                Textil.</h5><br><br><br>
-        </div>
-    </footer>
+
     
     
     <div class="form-popup" id="login-popup">
@@ -163,6 +130,10 @@
         </div>
     </div>
     
-    <script src="/assets/scripts/main.js"></script>
 </body>
 </html>
+
+
+<?php
+include('../includes/footer.php');
+?>
